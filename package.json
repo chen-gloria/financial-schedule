@@ -1,0 +1,19 @@
+{
+  "name": "financial-schedule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen-gloria/financial-schedule.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chen-gloria/financial-schedule/issues"
+  },
+  "homepage": "https://github.com/chen-gloria/financial-schedule#readme"
+}
