@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-sidebar id="sidebar-no-header" z-index=-1
-         aria-labelledby="sidebar-no-header-title" width="150px" no-close-on-route-change visible>
+         aria-labelledby="sidebar-no-header-title" width="150px" shadow no-close-on-route-change visible>
       <template>
         <div class="p-3">
           <nav class="mb-3">

@@ -11,10 +11,11 @@
                         <template #button-content>
                             <em> Plus Sign </em>
                         </template>
-                        <b-dropdown-item href="#">EN</b-dropdown-item>
-                        <b-dropdown-item href="#">ES</b-dropdown-item>
-                        <b-dropdown-item href="#">RU</b-dropdown-item>
-                        <b-dropdown-item href="#">FA</b-dropdown-item>
+                        Create new
+                        <b-dropdown-item href="#">Bills</b-dropdown-item>
+                        <b-dropdown-item href="#">Invoices</b-dropdown-item>
+                        <b-dropdown-item href="#">Quote</b-dropdown-item>
+                        <b-dropdown-item href="#">Purchase Order</b-dropdown-item>
                     </b-nav-item-dropdown>
 
                     <b-nav-item-dropdown right>
