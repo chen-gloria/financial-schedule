@@ -1,19 +1,17 @@
 <template>
   <div class="home">
-    
-    Home: Log in page
-
+    <Navbar/>
   </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import Navbar from "@/components/Navbar.vue"; // @ is an alias to /src
+<script>
+// @ is an alias to /src
+import Navbar from "@/components/Navbar.vue";
 
-@Options({
+export default {
+  name: "Home",
   components: {
-    
+    Navbar,
   },
-})
-export default class Home extends Vue {}
+};
 </script>

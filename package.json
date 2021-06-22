@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/chen-gloria/financial-schedule/issues"
   },
-  "homepage": "https://github.com/chen-gloria/financial-schedule#readme"
+  "homepage": "https://github.com/chen-gloria/financial-schedule#readme",
+  "devDependencies": {
+    "webpack-bundle-tracker": "^0.4.3"
+  }
 }

@@ -1,5 +1,4 @@
 const BundleTracker = require("webpack-bundle-tracker");
-const path = require('path');
 
 module.exports = {
     // on Windows you might want to set publicPath: "http://127.0.0.1:8080/" 
@@ -7,6 +6,7 @@ module.exports = {
     outputDir: './dist/',
 
     chainWebpack: config => {
+
         config
             .plugin('BundleTracker')
             .use(BundleTracker, [{filename: './webpack-stats.json'}])
@@ -19,7 +19,6 @@ module.exports = {
 
         config.resolve.alias
             .set('__STATIC__', 'static')
-            .set('vue$', path.resolve(__dirname, '/node_modules/vue/dist/vue.esm.js'))
 
         config.devServer
             // the first 3 lines of the following code have been added to the configuration
