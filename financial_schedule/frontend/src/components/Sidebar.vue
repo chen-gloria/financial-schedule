@@ -10,7 +10,7 @@
         <nav class="mb-3">
           <b-nav vertical>
             <b-nav-item active @click="view_all">View All</b-nav-item>
-            <b-nav-item href="#link-1" @click="view_bills">Bills</b-nav-item>
+            <b-nav-item href="#" @click="view_bills">Bills</b-nav-item>
             <b-nav-item href="#" @click="view_invoices">Invoices</b-nav-item>
             <b-nav-item href="#" @click="view_quote">Quote</b-nav-item>
             <b-nav-item href="#" @click="view_porder">Purchase Order</b-nav-item>

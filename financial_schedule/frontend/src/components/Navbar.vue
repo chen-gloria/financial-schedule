@@ -11,10 +11,10 @@
                         <em> Plus Sign </em>
                     </template>
                     Create new
-                    <b-dropdown-item href="#">Bills</b-dropdown-item>
-                    <b-dropdown-item href="#">Invoices</b-dropdown-item>
-                    <b-dropdown-item href="#">Quote</b-dropdown-item>
-                    <b-dropdown-item href="#">Purchase Order</b-dropdown-item>
+                    <b-dropdown-item href="#" @click="create_new('bills')">Bills</b-dropdown-item>
+                    <b-dropdown-item href="#" @click="create_new('invoices')">Invoices</b-dropdown-item>
+                    <b-dropdown-item href="#" @click="create_new('quote')">Quote</b-dropdown-item>
+                    <b-dropdown-item href="#" @click="create_new('purchae_order')">Purchase Order</b-dropdown-item>
                 </b-nav-item-dropdown>
 
                 <b-nav-item-dropdown right>
@@ -33,6 +33,14 @@
 <script>
 export default {
   name: "Navbar",
-  
+  methods: {
+    navigate_to_generate(link) {
+        window.location.href = link;
+    },
+    create_new(type){
+        console.log(type);
+        this.navigate_to_generate('/create/' + type);
+    }
+  }
 };
 </script>

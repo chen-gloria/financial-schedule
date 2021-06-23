@@ -1,6 +1,5 @@
 <template>
   <div class="container-fluid">
-    
     <h2 class="h2">Custom Calendars</h2>
     <vc-calendar
       class="custom-calendar max-w-full"

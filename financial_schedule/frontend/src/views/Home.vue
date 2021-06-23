@@ -7,7 +7,7 @@
         <Sidebar/>
       </div>
       <div class="main-panel col-10">
-        <div class="content-wrapper">
+        <div class="content-wrapper text-center">
           <Calendar/>
         </div>
         <div class="footer">
