@@ -11,10 +11,10 @@
                         <em> Plus Sign </em>
                     </template>
                     Create new
-                    <b-dropdown-item href="#" @click="create_new('bills')">Bills</b-dropdown-item>
-                    <b-dropdown-item href="#" @click="create_new('invoices')">Invoices</b-dropdown-item>
-                    <b-dropdown-item href="#" @click="create_new('quote')">Quote</b-dropdown-item>
-                    <b-dropdown-item href="#" @click="create_new('purchae_order')">Purchase Order</b-dropdown-item>
+                    <b-dropdown-item @click="create_new('bills')"> Bills </b-dropdown-item>
+                    <b-dropdown-item @click="create_new('invoices')">Invoices</b-dropdown-item>
+                    <b-dropdown-item @click="create_new('quote')">Quote</b-dropdown-item>
+                    <b-dropdown-item @click="create_new('purchae_order')">Purchase Order</b-dropdown-item>
                 </b-nav-item-dropdown>
 
                 <b-nav-item-dropdown right>
@@ -22,7 +22,7 @@
                     <template #button-content>
                         <em>User</em>
                     </template>
-                    <b-dropdown-item href="#">Profile</b-dropdown-item>
+                    <b-dropdown-item>Profile</b-dropdown-item>
                     <b-dropdown-item href="#">Sign Out</b-dropdown-item>
                 </b-nav-item-dropdown>
             </b-navbar-nav>
@@ -38,8 +38,10 @@ export default {
         window.location.href = link;
     },
     create_new(type){
-        console.log(type);
-        this.navigate_to_generate('/create/' + type);
+        this.$router.push({
+            name: 'create-new-forms',
+            param: { type: type }
+        })
     }
   }
 };

@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import CreateNewForms from "../components/CreateNewForms.vue";
 
 Vue.use(VueRouter);
 
@@ -10,6 +11,11 @@ const routes = [
     name: "Home",
     component: Home,
   },
+  {
+    path: "/create/:type",
+    name: "create-new-forms",
+    component: CreateNewForms,
+  }
 ];
 
 const router = new VueRouter({
@@ -19,3 +25,4 @@ const router = new VueRouter({
 });
 
 export default router;
+
